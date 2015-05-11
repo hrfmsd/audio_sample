@@ -1,0 +1,27 @@
+extends ./_layout.jade
+
+block title
+  title Hello, Audio Element
+
+block contents
+  div(ng-app="app")
+    h1 Hello,
+      span.text-primary &nbsp;Audio Element
+
+    div(ng-controller="myController" ng-init="init()") myController
+      .box()
+
+      div#hoge
+        button#btnPlay(name="play" ng-click="play()") play
+
+        button#btnStop(name="stop" ng-click="stop()") stop
+
+        button#btnSkip(name="next" ng-click="next()") next
+
+        button#btnSlow(name="slow" ng-click="slow()") slow
+
+        button#btnNormal(name="normal" ng-click="normal()") normal
+
+        button#btnFast(name="fast" ng-click="fast()") fast
+
+        button#btnFast(name="cueing" ng-click="cueing()") &lt;&lt;
