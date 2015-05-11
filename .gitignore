@@ -41,5 +41,6 @@ src/typescript/typings/*
 !src/typescript/typings/tsd.d.ts
 
 # public
-public/
+public/*
+!public/res/
 
